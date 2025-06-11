@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contacto | Cherry Line</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <div class="logo">
+        <img src="img/logo.jpg" alt="Cherry Line Logo">
+      </div>
+      <nav>
+        <a href="index.html">Inicio</a>
+        <a href="vestidos.html">Vestidos</a>
+        <a href="enaguas.html">Enaguas</a>
+        <a href="https://www.instagram.com/vestidos.de.15_/" target="_blank">Instagram</a>
+        <a href="contacto.html">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="contacto">
+    <h2>~ Contactanos ~</h2>
+    <div class="contacto-container">
+      <form id="formulario-contacto">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+        <label for="archivo">Adjuntar foto:</label>
+        <input type="file" id="archivo" name="archivo" accept="image/*">
+
+        <button type="submit">Enviar</button>
+        <p id="confirmacion" style="display:none; color: green; margin-top: 10px;">¡Mensaje enviado correctamente!</p>
+      </form>
+
+      <div class="info-contacto">
+        <h3>Cherry Line</h3>
+        <p>Vestidos de 15</p>
+        <p>📱 0351-153967282</p>
+        <p>✉ cherrylinevestidos15@gmail.com</p>
+        <p>📍 Córdoba, Argentina</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Cherry Line. Síguenos en <a href="https://www.instagram.com/vestidos.de.15_/" target="_blank">@vestidos.de.15_</a></p>
+  </footer>
+
+  <script>
+    document.getElementById("formulario-contacto").addEventListener("submit", function(e) {
+      e.preventDefault();
+      // Simula el envío
+      document.getElementById("confirmacion").style.display = "block";
+      this.reset(); // Limpia el formulario
+    });
+  </script>
+</body>
+</html>
