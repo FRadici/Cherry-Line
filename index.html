@@ -3,11 +3,95 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Cherry Line | Vestidos de 15</title>
+  <title>Cherry Line | Inicio</title>
   <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Estilos adicionales por si no están en styles.css */
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fff;
+      color: #333;
+    }
+
+    .header-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .logo img {
+      height: 60px;
+    }
+
+    nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #d11e48;
+      font-weight: bold;
+    }
+
+    .bienvenida {
+      text-align: center;
+      padding: 2rem 1rem;
+      background-color: #fff0f5;
+    }
+
+    .bienvenida h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    .bienvenida p {
+      font-size: 1.2rem;
+    }
+
+    .Modelos {
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+
+    .Modelos h2 {
+      margin-bottom: 1.5rem;
+      color: #d11e48;
+    }
+
+    .galeria-preview {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+    }
+
+    .galeria-preview img {
+      width: 100%;
+      max-width: 300px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #f5f5f5;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 600px) {
+      .bienvenida h1 {
+        font-size: 2rem;
+      }
+
+      .galeria-preview {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
 </head>
 <body>
-  <!-- Navegación -->
   <header>
     <div class="header-container">
       <div class="logo">
@@ -23,17 +107,19 @@
     </div>
   </header>
 
-  <!-- Galería -->
-  <section class="gallery">
-    <h2>~ Vestidos de 15 ~</h2>
-    <div class="grid">
-      <div class="card"><img src="img/rojo 1.jpg" alt="Vestido 1"></div>
-      <div class="card"><img src="img/rojo  2.jpg" alt="Vestido 2"></div>
-      <div class="card"><img src="img/rojo 3.jpg" alt="Vestido 3"></div>
-    </div>
+  <section class="bienvenida">
+    <h1>Bienvenidos a Cherry Line</h1>
+    <p>"Creá el vestido de tus sueños con diseños únicos, telas de alta calidad y detalles que enamoran".</p>
   </section>
 
-  <!-- Footer -->
+  <section class="Modelos">
+    <h2>~ Vistiendo tu Belleza ~</h2>
+    <div class="galeria-preview">
+      <img src="img/rojo 3.jpg" alt="Vestido 1">
+      <img src="img/rojo 2.jpg" alt="Vestido 2">
+      <img src="img/rojo 1.jpg" alt="Vestido 3">
+    </div>
+  </section>
   <footer>
     <p>&copy; 2025 Cherry Line. Síguenos en <a href="https://www.instagram.com/vestidos.de.15_/" target="_blank">@vestidos.de.15_</a></p>
   </footer>
