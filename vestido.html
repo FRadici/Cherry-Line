@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cherry Line | Vestidos de 15</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fff;
+      color: #333;
+    }
+
+    .header-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .logo img {
+      height: 60px;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 1rem;
+    }
+
+    nav a {
+      margin: 0.5rem 0.75rem;
+      text-decoration: none;
+      color: #d11e48;
+      font-weight: bold;
+    }
+
+    .galeria {
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    .galeria h1 {
+      color: #d11e48;
+      margin-bottom: 1.5rem;
+      font-size: 1.5rem;
+    }
+
+    .galeria-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 1.2rem;
+      justify-items: center;
+    }
+
+    .galeria-grid img {
+      width: 100%;
+      max-width: 300px;
+      border-radius: 12px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .galeria-grid img:hover {
+      transform: scale(1.03);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #f5f5f5;
+      font-size: 0.9rem;
+    }
+
+    /* Responsive extras para pantallas pequeñas */
+    @media (max-width: 480px) {
+      .logo img {
+        height: 50px;
+      }
+
+      nav a {
+        margin: 0.4rem;
+        font-size: 0.9rem;
+      }
+
+      .galeria h1 {
+        font-size: 1.3rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="header-container">
+      <div class="logo">
+        <img src="img/logo.jpg" alt="Cherry Line Logo" />
+      </div>
+      <nav>
+        <a href="index.html">Inicio</a>
+        <a href="vestidos.html">Vestidos</a>
+        <a href="enaguas.html">Enaguas</a>
+        <a href="https://www.instagram.com/vestidos.de.15_/" target="_blank">Instagram</a>
+        <a href="contacto.html">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="galeria">
+    <h1>~ Nuestra Colección de Vestidos ~</h1>
+    <div class="galeria-grid">
+      <img src="img/galeria/3d flores.png" alt="Vestido 1" />
+      <img src="img/galeria/aqua gemas.png" alt="Vestido 2" />
+      <img src="img/galeria/cola.png" alt="Vestido 3" />
+      <img src="img/galeria/tul bordado.png" alt="Vestido 4" />
+      <img src="img/galeria/blanco lazo.png" alt="Vestido 5" />
+      <img src="img/galeria/celeste.png" alt="Vestido 6" />
+      <img src="img/galeria/cenicienta.png" alt="Vestido 7" />
+      <img src="img/galeria/cinto rosa.png" alt="Vestido 8" />
+      <img src="img/galeria/cinto azul m.png" alt="Vestido 9" />
+      <img src="img/galeria/colacion.png" alt="Vestido 10" />
+      <img src="img/galeria/cinto azul.png" alt="Vestido 11" />
+      <img src="img/galeria/estrellita 2.png" alt="Vestido 12" />
+      <img src="img/galeria/cubierto.png" alt="Vestido 13" />
+      <img src="img/galeria/estrellita mangas.png" alt="Vestido 14" />
+      <img src="img/galeria/mariposas rosa.png" alt="Vestido 15" />
+      <img src="img/galeria/estrellita.png" alt="Vestido 16" />
+      <img src="img/galeria/mariposa azul.png" alt="Vestido 17" />
+      <img src="img/galeria/mostacilla.png" alt="Vestido 18" />
+      <img src="img/galeria/paillete.png" alt="Vestido 19" />
+      <img src="img/galeria/pulpo.png" alt="Vestido 20" />
+      <img src="img/galeria/rojo cinto.png" alt="Vestido 21" />
+      <img src="img/galeria/estrellita mangas (8).png" alt="Vestido 22" />
+      <img src="img/galeria/23 (1).png" alt="Vestido 23" />
+      <img src="img/galeria/23 (2).png" alt="Vestido 24" />
+      <img src="img/galeria/24.png" alt="Vestido 25" />
+      <img src="img/galeria/25.png" alt="Vestido 26" />
+      <img src="img/galeria/26.png" alt="Vestido 27" />
+      <img src="img/galeria/27.png" alt="Vestido 28" />
+      <img src="img/galeria/28.png" alt="Vestido 29" />
+      <img src="img/galeria/29.png" alt="Vestido 30" />
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Cherry Line. Síguenos en 
+      <a href="https://www.instagram.com/vestidos.de.15_/" target="_blank">@vestidos.de.15_</a>
+    </p>
+  </footer>
+</body>
+</html>
